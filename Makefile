@@ -16,7 +16,7 @@ endif
 # type 'make all' or 'gmake all' to build everything
 all: pong
 
-pong: pong.o console.o wall.o paddle.o ball.o
+pong: pong.o console.o paddle.o ball.o
 	$(CXX) $^ $(LDFLAGS) -o $@
 
 # to build an *.o file we need corresponding *.cc file
